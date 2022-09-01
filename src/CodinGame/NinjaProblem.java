@@ -19,7 +19,7 @@ public class NinjaProblem {
             AAA = in.nextInt();
             NNN = in.nextInt();
         }
-        int borrowMoney = 0;
+        int borrowMoney;
         int totalMoney = 0;
         for (int i = 1; i <= NNN; i++) {
             totalMoney += i*MMM;
