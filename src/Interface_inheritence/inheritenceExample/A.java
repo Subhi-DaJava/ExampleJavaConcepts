@@ -1,4 +1,4 @@
-package Interface_inheritence;
+package Interface_inheritence.inheritenceExample;
 
 public class A {
     public void talk()

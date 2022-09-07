@@ -2,6 +2,9 @@ package java100days;
 
 import java.util.Scanner;
 
+/**
+ * Fibonacci series
+ */
 public class Days_14 {
     public static void main(String[] args) {
         int a = 0;

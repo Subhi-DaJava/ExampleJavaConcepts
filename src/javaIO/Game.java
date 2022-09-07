@@ -16,10 +16,16 @@ import java.io.Serializable;
 public class Game implements Serializable {
     private String nom, style;
     private double prix;
-    //Maintenant, cette variable ne sera pas sérialisée
+    //Maintenant, cette variable ne sera pas sérialisée.
     //Elle sera tout bonnement ignorée !
+    // Mais que se passerait-il si notre objetGameavait un autre objet de votre composition en son sein ?
     private transient Notice notice;
-
+    /*
+    Vous aurez sans doute remarqué que nous n'utilisons pas la variable notice dans la méthode toString() de notre objet Game.
+    Si vous faites ceci, que vous sérialisez puis désérialisez vos objets,
+    la machine virtuelle vous renverra l’exceptionNullPointerException à l'invocation de ladite méthode.
+    Eh oui ! L'objet Notice est ignoré : il n'existe donc pas !
+     */
     public Game(String nom, String style, double prix) {
         this.nom = nom;
         this.style = style;

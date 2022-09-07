@@ -1,4 +1,6 @@
-package Interface_inheritence;
+package Interface_inheritence.inheritenceExample;
+
+import Interface_inheritence.inheritenceExample.A;
 
 public class B extends A {
     public void talk() {

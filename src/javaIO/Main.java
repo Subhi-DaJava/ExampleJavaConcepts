@@ -365,6 +365,8 @@ public class Main {
             e.printStackTrace();
         }
 
+        System.out.println("**************************** Les objets CharArray(Writer/Reader)et String(Writer/Reader) **********************************");
+
 
     }
 }
