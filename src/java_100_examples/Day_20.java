@@ -1,17 +1,19 @@
-package java100days;
+package java_100_examples;
 
 import java.util.Scanner;
 
 /**
- * Program name - Find largest number using java.
+ * Problem :  Find the largest number
+ * Input : 10 32 24
+ * Output : 32
  */
-public class Days_20 {
+public class Day_20 {
     public static void main(String[] args) {
         System.out.println("Enter the number :");
         Scanner in = new Scanner(System.in);
-        int x = in.nextInt(); // 7
-        int y = in.nextInt(); // 8
-        int z = in.nextInt(); // 5
+        int x = in.nextInt(); // 10
+        int y = in.nextInt(); // 32
+        int z = in.nextInt(); // 24
         if( x > y && x > z){
             System.out.println("Largest number : " + x);
         }
@@ -22,5 +24,5 @@ public class Days_20 {
             System.out.println("Largest number : " + z);
         }
     }
-    // largest number : 8
+    // largest number : 32
 }
