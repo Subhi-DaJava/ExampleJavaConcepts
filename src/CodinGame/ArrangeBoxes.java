@@ -95,13 +95,13 @@ public class ArrangeBoxes {
         String command6 = solve(3, boxes, false); // PICK, origin 4, target 3(return target index 3)
         System.out.println("Command 6 = " + command6);
 
-        int random1 = (int) (Math.random()*6);
+        int random1 = (int) (Math.random()*7);
         System.out.println("Random number1 = " + random1);
         String commandRandomTrue = solve( random1, boxes, true); // generate random numbers within 0 to 5
         System.out.println("Command random 1 box in claw = " + commandRandomTrue);
 
 
-        int random2 = (int) (Math.random() * 6);
+        int random2 = (int) (Math.random() * 7);
         System.out.println("Random number2 = " + random2);
         String commandRandomFalse = solve(random2, boxes, false); // generate random numbers within 0 to 5
         System.out.println("Command random  no box in claw = " + commandRandomFalse);
