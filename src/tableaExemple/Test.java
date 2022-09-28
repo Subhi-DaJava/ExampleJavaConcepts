@@ -54,5 +54,15 @@ public class Test {
         System.out.println("******************************* Binary Search ***************************************");
 
         System.out.println(t.binarySearch(42));
+
+        // Binary Search iterative
+        System.out.println("********************************* Binary Search Iterative *************************************");
+            int tab[] = {1, 2, 3, 4, 5, 6, 7};
+            int target = 4;
+            int l = tab.length-1;
+
+        System.out.println(BinarySearch.binarySearchIterative(tab,0,l,target));
+        System.out.println("******************************************* Binary Search Recursive **********************************************");
+        System.out.println(BinarySearch.binarySearchRecursive(tab,0, l, 7));
     }
 }

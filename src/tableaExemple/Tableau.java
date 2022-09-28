@@ -122,7 +122,7 @@ public class Tableau {
         }
         System.out.println("Le deuxième nombre le plus fréquent est " + valeur2 + ", il se répète " + frequence2 + " fois.");
     }
-    // Trouver un élément avec binary search
+    // Trouver un élément avec binarySearch
     public boolean binarySearch(int target){
         Arrays.sort(tab);
         int low = 0;
