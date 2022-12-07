@@ -1,4 +1,4 @@
-package tableaExemple;
+package tableauExemple;
 
 public class BinarySearch {
 
@@ -9,7 +9,7 @@ public class BinarySearch {
     target : valeur à vérifier
     */
     // 1ère approche : itérative
-    public static boolean binarySearchIterative(int tab[], int firstElt, int lastElt, int target) {
+    public static boolean binarySearchIterative(int[] tab, int firstElt, int lastElt, int target) {
         int mid = (firstElt + lastElt) / 2; // index médian
         while (firstElt <= lastElt) {
             if (tab[mid] < target) {
@@ -30,7 +30,7 @@ public class BinarySearch {
     }
 
     // 2ème approche : recursive
-    public static boolean binarySearchRecursive(int tab[], int firstElt, int lastElt, int target){
+    public static boolean binarySearchRecursive(int[] tab, int firstElt, int lastElt, int target){
         if (lastElt >= firstElt){
             int mid = firstElt + (lastElt - firstElt)/2;
 

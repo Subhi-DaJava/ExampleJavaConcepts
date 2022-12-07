@@ -1,4 +1,4 @@
-package tableaExemple;
+package tableauExemple;
 
 import java.util.Arrays;
 
@@ -13,8 +13,8 @@ public class Tableau {
     }
     // Méthode afficher
     public void afficher(){
-        for (int i = 0; i < tab.length; i++) {
-            System.out.print(tab[i] + "   ");
+        for (int elt : tab) {
+            System.out.print(elt + "   ");
         }
     }
     // Méthode rechercher

@@ -1,4 +1,4 @@
-package tableaExemple;
+package tableauExemple;
 
 public class Test {
     public static void main(String[] args) {
@@ -57,7 +57,7 @@ public class Test {
 
         // Binary Search iterative
         System.out.println("********************************* Binary Search Iterative *************************************");
-            int tab[] = {1, 2, 3, 4, 5, 6, 7};
+            int[] tab = {1, 2, 3, 4, 5, 6, 7};
             int target = 4;
             int l = tab.length-1;
 

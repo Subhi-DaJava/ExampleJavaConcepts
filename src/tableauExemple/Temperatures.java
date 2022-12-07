@@ -1,11 +1,11 @@
-package tableaExemple;
+package tableauExemple;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Temperatures {
 
-        public static void main(String args[]) {
+        public static void main(String[] args) {
             Scanner in = new Scanner(System.in);
             System.out.println("Enter the number (Integer) :");
             int N = in.nextInt();

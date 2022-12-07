@@ -1,4 +1,4 @@
-package tableaExemple;
+package tableauExemple;
 
 import java.util.Arrays;
 
