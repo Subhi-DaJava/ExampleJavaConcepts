@@ -1,4 +1,4 @@
-package java_methods_example;
+package java_methods_example.functional_decomposing;
 
 import java.util.Scanner;
 
