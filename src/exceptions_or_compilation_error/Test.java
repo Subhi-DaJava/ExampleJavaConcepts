@@ -1,4 +1,4 @@
-package ExceptionsOrCOmpilationError;
+package exceptions_or_compilation_error;
 
 import java.io.IOException;
 

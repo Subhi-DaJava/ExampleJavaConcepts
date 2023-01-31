@@ -1,4 +1,4 @@
-package ExceptionsOrCOmpilationError;
+package exceptions_or_compilation_error;
 
 public class AddOverloading {
     static void add(double d1, double d2){
