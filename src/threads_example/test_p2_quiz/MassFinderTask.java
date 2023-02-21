@@ -87,3 +87,7 @@ public class MassFinderTask extends RecursiveTask<Integer> {
         System.out.println(numberOfMatches);
     }
 }
+/*
+Create a base case which returns a 1 for all solarMasses greater than or equal to our minimum mass.
+ Every one gets added up by each level of RecursiveTask. The code might look like this:
+ */

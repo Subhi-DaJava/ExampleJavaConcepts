@@ -53,3 +53,7 @@ public class TelescopeOrderService {
         }
     }
 }
+/*
+Remove the  catch  block and change the method declaration to
+public void orderATelescope(String starName) throws InterruptedException, IOException {
+ */

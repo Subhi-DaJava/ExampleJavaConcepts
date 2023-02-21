@@ -22,6 +22,7 @@ public class ReducedExample {
     private CountDownLatch latch = new CountDownLatch(3);
     private List<Star> starsReturnedByService =
             FakeStarListFactory.make().subList(0, 3);
+
     // When run, this blocks and doesn't return. For some reason, the  waitingThread  gets stuck at  latch.await().
     public void simplifiedExample() throws Exception {
         // Create a thread which waits for us to finish looping
@@ -73,3 +74,7 @@ public class ReducedExample {
         );
     }*/
 }
+/*
+The loop doesn't call countDown() 3 times, thus preventing latch.await() from unblocking.
+ This means that the code remains blocked until countDown() is called a sufficient number of times.
+ */

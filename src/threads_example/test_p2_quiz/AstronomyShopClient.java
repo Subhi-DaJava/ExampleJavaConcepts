@@ -9,7 +9,7 @@ package threads_example.test_p2_quiz;
  * You've been asked to modify some code to use the following class's  buy(discountCode, item)  method to purchase a telescope item.
  */
 public class AstronomyShopClient {
-    public void buy(String discountCoude, String item) {
+    public void buy(String discountCode, String item) {
         System.out.println("Ordered a telescope");
     }
 }

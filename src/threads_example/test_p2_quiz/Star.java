@@ -12,4 +12,12 @@ public class Star {
         this.name = name;
         this.solarMasses = solarMasses;
     }
+
+    @Override
+    public String toString() {
+        return "Star{" +
+                "name='" + name + '\'' +
+                ", solarMasses=" + solarMasses +
+                '}';
+    }
 }

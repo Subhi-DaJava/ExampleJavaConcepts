@@ -17,4 +17,13 @@ public class FakeStarListFactory {
                         collect(Collectors.toList());
         return stars;
     }
+
+}
+class ShowAllStars {
+    public static void main(String[] args) {
+
+        for (Star star: FakeStarListFactory.make()) {
+            System.out.println(star.toString());
+        }
+    }
 }
