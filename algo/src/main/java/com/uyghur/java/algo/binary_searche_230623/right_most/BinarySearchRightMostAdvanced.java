@@ -1,4 +1,4 @@
-package com.uyghur.java.algo.binary_searche_230623.binary_search_advanced;
+package com.uyghur.java.algo.binary_searche_230623.right_most;
 
 /**
  * Steps:
@@ -10,30 +10,28 @@ package com.uyghur.java.algo.binary_searche_230623.binary_search_advanced;
  * 4. if target < Am -> j -> middle - 1
  * 5. if target > Am -> i -> middle + 1
  * 6. target = Am, stop
- * 7. return -1, no target
+ * 7. return i - 1, no target found, index <= target index
  */
 
-public class BinarySearchAlternative {
+public class BinarySearchRightMostAdvanced {
 
     public int solution(int[] arr, int target) {
 
-        int i = 0, j = arr.length;
+        int i = 0, j = arr.length - 1;
 
-        while (i < j) {
+        while (i <= j) {
 
             //int middle = (i + j) / 2;
             int middle = (i + j) >>> 1; // Integer.MaxValue + 100 = -521321212 Décalage à droite non signé / Unsigned right shift
 
             if (target < arr[middle]) {
-                j = middle;
-            } else if (arr[middle] < target) {
+                j = middle - 1;
+            } else  {
                 i = middle + 1;
-            } else {
-                return middle;
             }
         }
 
-        return -1;
+        return i - 1;
     }
 
 }

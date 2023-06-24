@@ -22,7 +22,7 @@ public class BinarySearch {
         while (i <= j) {
 
             //int middle = (i + j) / 2;
-            int middle = (i + j) >>> 1; // Integer.MaxValue + 100 = -521321212
+            int middle = (i + j) >>> 1; // Integer.MaxValue + 100 = -521321212 Décalage à droite non signé / Unsigned right shift
 
             if (target < arr[middle]) {
                 j = middle - 1;
