@@ -1,4 +1,4 @@
-package com.uyghur.java.algo.arrays;
+package com.uyghur.java.algo.arrays_240623;
 
 import java.util.Arrays;
 import java.util.Iterator;
