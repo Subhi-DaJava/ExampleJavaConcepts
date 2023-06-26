@@ -7,12 +7,13 @@ public class ArrangeBoxes {
         int boxPerStack = totalBoxes / arrLength;
         int[] newStack = new int[arrLength];
 
+        // Arrays.fill(newStack, boxPerStack);
         for (int i = 0; i < arrLength; i++) {
             newStack[i] = boxPerStack;
         }
 
         int remainder = totalBoxes % arrLength;
-        if(remainder != 0) {
+        if (remainder != 0) {
             for (int i = 0; i < remainder; i++) {
                 newStack[i]++;
             }
@@ -21,7 +22,7 @@ public class ArrangeBoxes {
         return newStack;
     }
 
-    public static int totalBoxes(int[] boxes){
+    public static int totalBoxes(int[] boxes) {
         int sum = 0;
         for (int elt : boxes) {
             sum += elt;
@@ -32,42 +33,40 @@ public class ArrangeBoxes {
     public static String solve(int clawPos, int[] boxes, boolean boxInClaw) {
         int totalBoxes = totalBoxes(boxes);
         int targetPos = 0;
-
-        if(boxInClaw) {
+        if (boxInClaw) {
             int[] targetStack = createStack(boxes.length, totalBoxes + 1);
             for (int i = 0; i < boxes.length; i++) {
-                if(boxes[i] < targetStack[i]) {
+                if (boxes[i] < targetStack[i]) {
                     targetPos = i;
                     break;
                 }
             }
-            if(clawPos == targetPos){
+            if (clawPos == targetPos) {
                 return "PLACE";
-            }
-            else if(clawPos < targetPos) {
+            } else if (clawPos < targetPos) {
                 return "RIGHT";
-            }
-            else {
+            } else {
                 return "LEFT";
             }
+
         } else {
             int[] targetStack = createStack(boxes.length, totalBoxes);
             for (int i = 0; i < boxes.length; i++) {
-                if(boxes[i] > targetStack[i]) {
+                if (boxes[i] > targetStack[i]) {
                     targetPos = i;
                     break;
                 }
             }
-            if(clawPos == targetPos) {
+            if (clawPos == targetPos) {
                 return "PICK";
-            }
-            else if(clawPos < targetPos) {
+            } else if (clawPos < targetPos) {
                 return "RIGHT";
-            }
-            else {
+            } else {
                 return "LEFT";
             }
+
         }
+
     }
 
     public static void main(String[] args) {
