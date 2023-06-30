@@ -1,4 +1,4 @@
-package com.uyghur.java.algo.recursion_280623;
+package com.uyghur.java.algo.single_recursion_280623;
 
 /**
  * To print a given string in reverse using recursion

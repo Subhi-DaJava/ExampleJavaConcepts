@@ -1,4 +1,4 @@
-package com.uyghur.java.algo.recursion_280623;
+package com.uyghur.java.algo.single_recursion_280623;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -6,7 +6,7 @@ import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+
 @ExtendWith(MockitoExtension.class)
 class BinarySearchWithRecursionTest {
     @InjectMocks

@@ -1,4 +1,4 @@
-package com.uyghur.java.algo.recursion_280623;
+package com.uyghur.java.algo.single_recursion_280623;
 
 /**
  * input : [9, 13, 71, 76, 8, 21, 5, 11]  index : 0, 1, 2, 3 sorted, index: 4, 5, 6, 7 not sorted yet; index 4 is start point
