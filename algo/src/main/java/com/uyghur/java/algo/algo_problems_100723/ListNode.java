@@ -46,4 +46,16 @@ public class ListNode {
     public int hashCode() {
         return Objects.hash(value, next);
     }
+
+    public static ListNode of(int...els) {
+        if (els.length == 0) {
+            return null;
+        }
+        ListNode pointer = null;
+
+        for (int i = els.length - 1; i >= 0; i--) {
+            pointer = new ListNode(els[i], pointer);
+        }
+        return pointer;
+    }
 }
