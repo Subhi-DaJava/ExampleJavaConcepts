@@ -2,8 +2,9 @@ package table_multiplication;
 
 public class TableMultiResult {
     public static void main(String[] args) {
-        for (int i = 1; i < 10; i++) {
-            for (int j = 1; j < 10; j++) {
+        int num = 10;
+        for (int i = 1; i < num; i++) {
+            for (int j = 1; j < num; j++) {
                 System.out.print(i * j + "\t");
             }
             System.out.println();
