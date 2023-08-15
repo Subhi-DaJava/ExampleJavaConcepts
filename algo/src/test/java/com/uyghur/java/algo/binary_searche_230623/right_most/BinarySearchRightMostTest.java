@@ -1,6 +1,5 @@
 package com.uyghur.java.algo.binary_searche_230623.right_most;
 
-import com.uyghur.java.algo.binary_searche_230623.left_most.BinarySearchLeftMost;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
