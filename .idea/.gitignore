@@ -7,3 +7,16 @@
 /dataSources/
 /dataSources.local.xml
 *.class
+/bsp.xml
+/codeStyles/codeStyleConfig.xml
+/compiler.xml
+/encodings.xml
+/gradle.xml
+/jarRepositories.xml
+/jpa-buddy.xml
+/misc.xml
+/modules.xml
+/codeStyles/Project.xml
+/scala_compiler.xml
+/uiDesigner.xml
+/vcs.xml
